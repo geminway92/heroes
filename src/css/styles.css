@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+:root {
+   --yellow: yellow;
+   --red: red;
+
+}
+
+
+html, body {
+    background-color: var(--red);
+    margin: 0;
+}
+
+
+

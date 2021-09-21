@@ -2,7 +2,7 @@
     <div  class="ul-characters">
             <ul>
 
-                <li v-for="item in heroesA" :key="item" class="li-characters"
+                <li v-for="item in heroesB" :key="item" class="li-characters"
                 >
                 {{item.name}} <img :src="item.image.url"  alt="">
                 
@@ -14,18 +14,18 @@
 </template>
 
 <script>
-import useHeroes from '../../heroesAlfabeto/composables/useHeroes'
+import useHeroes from '../composables/useHeroes'
 
 
 export default {
-    name: 'letter-a',
+    name: 'letter-b',
 
     setup() {
 
-        const { heroesA} = useHeroes()
+        const { heroesB } = useHeroes()
 
         return{
-            heroesA,
+            heroesB,
 
         }
     }

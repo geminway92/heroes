@@ -5,12 +5,27 @@
 
 
 
-export const setHeroes = ( state, characters ) => {
-    state.characters = [...characters]  
+export const setHeroes = ( state, heroesA ) => {
+    state.heroesA = [...heroesA]  
 
 }
 
 
+export const setHeroesB = ( state, heroesB) => {
+    state.heroesB= [...heroesB]  
+
+}
+
+export const setHeroesC = ( state, heroesC ) => {
+    state.heroesC = [...heroesC ]  
+
+}
+
+
+export const setHeroesD = ( state, heroesD ) => {
+    state.heroesD = [...heroesD ]  
+
+}
 
 
 

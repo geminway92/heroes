@@ -1,36 +1,17 @@
 <template>
     <div class="abcList">
-            <ul>
+            
+        <router-link to="/superheroes/">A </router-link>
+        <router-link to="/superheroes/letter-b">B </router-link>
+        <router-link to="/superheroes/letter-c">C </router-link>
+        <router-link to="/superheroes/letter-d">D </router-link>
+        <router-link to="/superheroes/letter-h">E </router-link>
+        <router-link to="/superheroes/letter-h">F </router-link>
+        <router-link to="/superheroes/letter-h">G </router-link>
+        <router-link to="/superheroes/letter-h">H </router-link>
+            
 
-                <li>A</li>
-                <li >B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
-                <li>F</li>
-                <li>G</li>
-                <li>H</li>
-                <li>I</li>
-                <li>J</li>
-                <li>K</li>
-                <li>L</li>
-                <li>M</li>
-                <li>N</li>
-                <li>Ñ</li>
-                <li>O</li>
-                <li>P</li>
-                <li>Q</li>
-                <li>R</li>
-                <li>S</li>
-                <li>T</li>
-                <li>U</li>
-                <li>V</li>
-                <li>W</li>
-                <li>X</li>
-                <li>T</li>
-                <li>Z</li>
-
-            </ul>
+            
         </div>
 </template>
 
@@ -48,11 +29,21 @@
     margin-bottom: 35px;
 }
 
-.abcList li {
+.abcList a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.abcList a.router-link {
     display: flex;
     justify-content: center;
     margin: 5px;
     cursor: pointer;    
+}
+
+.abcList a.router-link-exact-active {
+    color: var(--yellow);
 }
 
 </style>

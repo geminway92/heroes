@@ -27,20 +27,26 @@ export default {
     setup() {   
         
                 
-        const { getHeroe, heroesA, characters } = useHeroes()
+        const { getHeroe, getHeroeB, getHeroeC, getHeroeD } = useHeroes()
 
         return {
-            heroesA,
-            characters,
+        
             
 
             getHeroe,
+            getHeroeB,
+            getHeroeC,
+            getHeroeD,
         }
 
         
     },
     created(){
-        this.getHeroe()
+        this.getHeroe(),
+        this.getHeroeB(),
+        this.getHeroeC()
+        this.getHeroeD()
+
     }
     
     

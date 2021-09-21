@@ -15,8 +15,26 @@ const routes = [
       {
         path: '',
         name: 'letter-a',
-        component: () => import(/* webpackChunkName: 'heroesA*/ '../modules/heroesAlfabeto/views/HeroesA.vue')
-      }
+        component: () => import(/* webpackChunkName: 'letter-a*/ '../modules/heroesAlfabeto/views/HeroesA.vue')
+      },
+      {
+        path: 'letter-b',
+        name: 'letter-b',
+        component: () => import(/* webpackChunkName: 'letter-b' */ '../modules/heroesAlfabeto/views/HeroesB.vue')
+      },
+      {
+        path: 'letter-c',
+        name: 'letter-c',
+        component: () => import(/* webpackChunkName: 'letter-c' */ '../modules/heroesAlfabeto/views/HeroesC.vue')
+      },
+      {
+        path: 'letter-d',
+        name: 'letter-d',
+        component: () => import(/* webpackChunkName: 'letter-d' */ '../modules/heroesAlfabeto/views/HeroesD.vue')
+      },
+
+
+
     ]
   },
   {
